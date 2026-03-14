@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Torres Cocktail Menu — February 2026</title>
+  <title>Torres Cocktail Menu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Special+Elite&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
@@ -25,7 +25,6 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    /* ── Subtle seigaiha (wave) background via SVG data-URI ── */
     body {
       font-family: "Special Elite", "Courier New", Courier, monospace;
       font-weight: 400;
@@ -39,7 +38,6 @@
       letter-spacing: 0.015em;
     }
 
-    /* ── Vertical decorative strip (kanji: sake · style · flavor) ── */
     body::before {
       content: "酒 ・ 粋 ・ 味";
       position: fixed;
@@ -62,7 +60,6 @@
       z-index: 1;
     }
 
-    /* ── Hero / Title ── */
     .hero {
       text-align: center;
       padding: 2rem 0 2.5rem;
@@ -75,7 +72,6 @@
       font-size: 0.82rem;
       letter-spacing: 0.7em;
       color: var(--gold);
-      text-transform: uppercase;
       display: block;
       margin-bottom: 0.6rem;
     }
@@ -97,7 +93,6 @@
       color: var(--stone);
     }
 
-    /* Ensō-inspired circle divider */
     .hero .enso {
       display: block;
       width: 48px;
@@ -110,10 +105,7 @@
       transform: rotate(-30deg);
     }
 
-    /* ── Section ── */
-    .menu-section {
-      margin-bottom: 2.6rem;
-    }
+    .menu-section { margin-bottom: 2.6rem; }
 
     .menu-section h2 {
       font-family: "Cormorant Garamond", Georgia, serif;
@@ -128,7 +120,6 @@
       position: relative;
     }
 
-    /* Small vermillion accent mark before section titles */
     .menu-section h2::before {
       content: "";
       display: inline-block;
@@ -142,10 +133,7 @@
       top: -1px;
     }
 
-    /* ── Drink items — clean list layout ── */
-    .drinks {
-      list-style: none;
-    }
+    .drinks { list-style: none; }
 
     .drink {
       padding: 0.72rem 0;
@@ -157,13 +145,8 @@
       transition: background 0.2s ease;
     }
 
-    .drink:last-child {
-      border-bottom: none;
-    }
-
-    .drink:hover {
-      background: rgba(245, 240, 232, 0.025);
-    }
+    .drink:last-child { border-bottom: none; }
+    .drink:hover { background: rgba(245, 240, 232, 0.025); }
 
     .drink h3 {
       font-family: "Noto Serif JP", "Cormorant Garamond", serif;
@@ -189,7 +172,6 @@
       padding-left: 0.05rem;
     }
 
-    /* ── Extras ── */
     .extras {
       margin-top: 0.5rem;
       margin-bottom: 2.5rem;
@@ -209,7 +191,6 @@
       color: var(--washi);
     }
 
-    /* ── Footer ── */
     .colophon {
       text-align: center;
       padding-top: 1.5rem;
@@ -220,7 +201,6 @@
       text-transform: uppercase;
     }
 
-    /* ── Responsive ── */
     @media (max-width: 600px) {
       body { padding: 2rem 1rem 3rem; }
       body::before { display: none; }
@@ -232,109 +212,109 @@
   </style>
 </head>
 <body>
-  <main class="container">
-    <header class="hero">
-      <span class="logotype">カクテル</span>
-      <h1>Torres</h1>
-      <p class="date">February 2026</p>
-      <span class="enso" aria-hidden="true"></span>
-    </header>
-
-    <section class="menu-section" aria-labelledby="bubbles-title">
-      <h2 id="bubbles-title">Things With Bubbles</h2>
-      <ul class="drinks">
-        <li class="drink">
-          <h3>Lavender 75</h3><span class="dots" aria-hidden="true"></span>
-          <p>Empress gin, homemade lavender syrup, prosecco.</p>
-        </li>
-        <li class="drink">
-          <h3>Old Cuban</h3><span class="dots" aria-hidden="true"></span>
-          <p>Planteray 5-year rum, simple syrup, lime, mint, prosecco splash.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="menu-section" aria-labelledby="winter-title">
-      <h2 id="winter-title">Winter Specials — Maple, Cider &amp; Spice</h2>
-      <ul class="drinks">
-        <li class="drink">
-          <h3>Why Not</h3><span class="dots" aria-hidden="true"></span>
-          <p>Tennessee whiskey, Cointreau, lemon, maple.</p>
-        </li>
-        <li class="drink">
-          <h3>Flannel Shirt</h3><span class="dots" aria-hidden="true"></span>
-          <p>Scotch, apple cider, Averna, lemon, allspice, maple.</p>
-        </li>
-        <li class="drink">
-          <h3>V.O.C.</h3><span class="dots" aria-hidden="true"></span>
-          <p>Rye, applejack, masala cider syrup, cardamom, allspice.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="menu-section" aria-labelledby="pomegranate-title">
-      <h2 id="pomegranate-title">Pomegranate Season</h2>
-      <ul class="drinks">
-        <li class="drink">
-          <h3>Jack Rose</h3><span class="dots" aria-hidden="true"></span>
-          <p>Applejack brandy, homemade grenadine, lemon.</p>
-        </li>
-        <li class="drink">
-          <h3>Mexican Firing Squad</h3><span class="dots" aria-hidden="true"></span>
-          <p>Tequila or mezcal, grenadine, lime, Angostura.</p>
-        </li>
-        <li class="drink">
-          <h3>Queens Park Super</h3><span class="dots" aria-hidden="true"></span>
-          <p>Rum, sweet sherry vermouth, grenadine, lime, Angostura.</p>
-        </li>
-        <li class="drink">
-          <h3>El Presidente</h3><span class="dots" aria-hidden="true"></span>
-          <p>Rum, blanc vermouth, dry curaçao, grenadine, orange bitters.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="menu-section" aria-labelledby="news-title">
-      <h2 id="news-title">In Other News…</h2>
-      <ul class="drinks">
-        <li class="drink">
-          <h3>Hotel Nacional</h3><span class="dots" aria-hidden="true"></span>
-          <p>Funky rum blend, pineapple, lime, apricot, Angostura.</p>
-        </li>
-        <li class="drink">
-          <h3>Flor de Jerez</h3><span class="dots" aria-hidden="true"></span>
-          <p>Amontillado Sherry, rum, apricot, lemon.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="menu-section" aria-labelledby="strong-title">
-      <h2 id="strong-title">Strong &amp; Stirred</h2>
-      <ul class="drinks">
-        <li class="drink">
-          <h3>House White Negroni</h3><span class="dots" aria-hidden="true"></span>
-          <p>Gin, Cocchi Americano, Bitter Bianco.</p>
-        </li>
-        <li class="drink">
-          <h3>Sentimental Gentleman</h3><span class="dots" aria-hidden="true"></span>
-          <p>Scotch, Bénédictine, nocino walnut liqueur.</p>
-        </li>
-        <li class="drink">
-          <h3>Vieux Carré</h3><span class="dots" aria-hidden="true"></span>
-          <p>Rye, cognac, Cocchi Vermouth di Torino, Bénédictine, bitters.</p>
-        </li>
-        <li class="drink">
-          <h3>Bananas' Foster Home for Imaginary Friends</h3><span class="dots" aria-hidden="true"></span>
-          <p>Funky rum blend, banana, mole.</p>
-        </li>
-      </ul>
-    </section>
-
-    <aside class="extras">
-      <strong>Also —</strong> Bespoke G&amp;Ts (we have too, too much gin — help us drink it), Amaretto/Whiskey Sours, Margarita, various Negronis, and things like these…
-    </aside>
-
-    <footer class="colophon">Torres · Beacon</footer>
+  <main class="container" id="menu">
+    <p style="text-align:center;padding:4rem 1rem;color:var(--stone)">Loading menu…</p>
   </main>
+
+  <script>
+    /*
+      ╔══════════════════════════════════════════════════════╗
+      ║  CONFIGURATION — change this one line:              ║
+      ║  Paste your Google Doc ID between the quotes.       ║
+      ║                                                     ║
+      ║  Your Doc URL looks like:                           ║
+      ║  https://docs.google.com/document/d/XXXX.../edit    ║
+      ║  Copy the XXXX... part.                             ║
+      ╚══════════════════════════════════════════════════════╝
+    */
+    const DOC_ID = '11BBF50aETXUk1A-haVxSNY_v4UralM0oo8eZfHCCwro';
+
+    /*
+      Google Doc plain-text format:
+        Line 1        → Bar name (big title)
+        Line 2        → Subtitle / date
+        # Section     → New section heading
+        Name /// …    → Drink name /// ingredients
+        > text        → Aside / extras note
+        (blank lines are skipped)
+    */
+
+    const url = `https://docs.google.com/document/d/${DOC_ID}/export?format=txt`;
+
+    fetch(url)
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(render)
+      .catch(() => {
+        document.getElementById('menu').innerHTML =
+          '<p style="text-align:center;padding:4rem 1rem;color:var(--stone)">' +
+          'Could not load menu. Check that the Google Doc is published to the web.</p>';
+      });
+
+    function esc(s) {
+      const el = document.createElement('span');
+      el.textContent = s;
+      return el.innerHTML;
+    }
+
+    function render(text) {
+      const lines = text.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n').split('\n');
+      const title = lines[0]?.trim() || 'Menu';
+      const subtitle = lines[1]?.trim() || '';
+
+      document.title = title + (subtitle ? ' \u2014 ' + subtitle : '');
+
+      let html = `
+        <header class="hero">
+          <span class="logotype">\u30AB\u30AF\u30C6\u30EB</span>
+          <h1>${esc(title)}</h1>
+          <p class="date">${esc(subtitle)}</p>
+          <span class="enso" aria-hidden="true"></span>
+        </header>`;
+
+      let inSection = false;
+      const extras = [];
+
+      for (let i = 2; i < lines.length; i++) {
+        const trimmed = lines[i].trim();
+        if (!trimmed) continue;
+
+        // Section heading
+        if (trimmed.startsWith('#')) {
+          if (inSection) html += '</ul></section>';
+          const name = trimmed.replace(/^#+\s*/, '');
+          const id = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+$/, '');
+          html += `<section class="menu-section" aria-labelledby="s-${id}">`;
+          html += `<h2 id="s-${id}">${esc(name)}</h2><ul class="drinks">`;
+          inSection = true;
+          continue;
+        }
+
+        // Extras / note
+        if (trimmed.startsWith('>')) {
+          extras.push(trimmed.slice(1).trim());
+          continue;
+        }
+
+        // Drink line
+        if (trimmed.includes('///')) {
+          const sep = trimmed.indexOf('///');
+          const name = trimmed.slice(0, sep).trim();
+          const ingredients = trimmed.slice(sep + 3).trim();
+          html += `<li class="drink"><h3>${esc(name)}</h3>` +
+                  `<span class="dots" aria-hidden="true"></span>` +
+                  `<p>${esc(ingredients)}</p></li>`;
+        }
+      }
+
+      if (inSection) html += '</ul></section>';
+
+      if (extras.length) {
+        html += `<aside class="extras"><strong>Also \u2014</strong> ${esc(extras.join(' '))}</aside>`;
+      }
+
+      html += `<footer class="colophon">${esc(title)} \u00b7 Beacon</footer>`;
+      document.getElementById('menu').innerHTML = html;
+    }
+  </script>
 </body>
 </html>
