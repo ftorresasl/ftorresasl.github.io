@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Torres Cocktail Menu — February 2026</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --bg-elev: rgba(255, 255, 255, 0.06);
+      --bg-elev-2: rgba(255, 255, 255, 0.1);
+      --text: #f8f9ff;
+      --muted: #b9bfd9;
+      --accent: #c2a1ff;
+      --accent-2: #7dd3fc;
+      --border: rgba(255, 255, 255, 0.15);
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(125, 211, 252, 0.18), transparent 40%),
+        radial-gradient(circle at left 20%, rgba(194, 161, 255, 0.2), transparent 35%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 2.5rem 1rem 4rem;
+    }
+
+    .container {
+      width: min(1100px, 100%);
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 2.25rem;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 2.2vw + 1rem, 2.8rem);
+      letter-spacing: 0.02em;
+    }
+
+    .hero p {
+      margin: 0.65rem 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .menu-section {
+      margin-top: 2rem;
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      backdrop-filter: blur(4px);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .menu-section h2 {
+      margin: 0;
+      padding: 1rem 1.2rem;
+      font-size: 1.1rem;
+      background: linear-gradient(90deg, rgba(194, 161, 255, 0.25), rgba(125, 211, 252, 0.12));
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.01em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 0.85rem;
+      padding: 1rem;
+    }
+
+    .item {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 0.85rem 0.9rem;
+      background: var(--bg-elev-2);
+    }
+
+    .item h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .extras {
+      margin-top: 2rem;
+      padding: 1rem 1.2rem;
+      border-radius: var(--radius);
+      border: 1px dashed var(--border);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--muted);
+    }
+
+    .extras strong {
+      color: var(--text);
+    }
+
+    .footer {
+      margin-top: 1.25rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: right;
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding-top: 1.75rem;
+      }
+
+      .menu-section h2 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Torres Cocktail Menu</h1>
+      <p>February 2026</p>
+    </header>
+
+    <section class="menu-section" aria-labelledby="bubbles-title">
+      <h2 id="bubbles-title">Things With Bubbles</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>Lavender 75</h3>
+          <p>Empress gin, homemade lavender syrup, prosecco.</p>
+        </article>
+        <article class="item">
+          <h3>Old Cuban</h3>
+          <p>Planteray 5-year rum, simple syrup, lime, mint, prosecco splash.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" aria-labelledby="winter-title">
+      <h2 id="winter-title">Winter Specials — Maple, Cider, and Spice</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>Why Not</h3>
+          <p>Tennessee whisky, cointreau, lemon, maple.</p>
+        </article>
+        <article class="item">
+          <h3>Flannel Shirt</h3>
+          <p>Scotch, apple cider, averna, lemon, allspice, maple.</p>
+        </article>
+        <article class="item">
+          <h3>V.O.C.</h3>
+          <p>Rye, applejack, masala cider syrup, cardamom, allspice.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" aria-labelledby="pomegranate-title">
+      <h2 id="pomegranate-title">Did You Know It’s Pomegranate Season in the Northern Hemisphere?</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>Jack Rose</h3>
+          <p>Applejack brandy, homemade grenadine, lemon.</p>
+        </article>
+        <article class="item">
+          <h3>Mexican Firing Squad</h3>
+          <p>Tequila or mezcal, grenadine, lime, angostura.</p>
+        </article>
+        <article class="item">
+          <h3>Queens Park Super</h3>
+          <p>Rum, sweet sherry vermouth, grenadine, lime, angostura.</p>
+        </article>
+        <article class="item">
+          <h3>El Presidente</h3>
+          <p>Rum, blanc vermouth, dry curacao, grenadine, orange bitters.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" aria-labelledby="news-title">
+      <h2 id="news-title">In Other News…</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>Hotel Nacional</h3>
+          <p>Funky rum blend, pineapple, lime, apricot, angostura.</p>
+        </article>
+        <article class="item">
+          <h3>Flor De Jerez</h3>
+          <p>Amontillado sherry, rum, apricot, lemon.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" aria-labelledby="strong-title">
+      <h2 id="strong-title">Strong and Stirred</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>House White Negroni</h3>
+          <p>Gin, cocchi americano, bitter bianco.</p>
+        </article>
+        <article class="item">
+          <h3>Sentimental Gentleman</h3>
+          <p>Scotch, benedictine, nocino walnut liqueur.</p>
+        </article>
+        <article class="item">
+          <h3>Vieux Carre</h3>
+          <p>Rye, cognac, cocchi vermouth di torino, benedictine, bitters.</p>
+        </article>
+        <article class="item">
+          <h3>Bananas’ Foster Home for Imaginary Friends</h3>
+          <p>Funky rum blend, banana, mole.</p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="extras">
+      <strong>Also available:</strong> Bespoke G&amp;T’s (we have too, too much gin, help us drink it!), Amaretto/Whiskey Sours, Margarita, various forms of Negronis, and things like these…
+    </aside>
+
+    <p class="footer">Reference source: Torres Cocktail Menu.pdf</p>
+  </main>
+</body>
+</html>
